@@ -1,7 +1,7 @@
 # TwistRide Privacy Policy
 
-**Effective date:** 2026-11-05
-**Last updated:** 2026-11-05
+**Effective date:** 2026-11-07
+**Last updated:** 2026-11-07
 
 TwistRide is a navigation app for motorcycle riders. This policy explains what information the app processes and how it is handled.
 
@@ -10,7 +10,9 @@ TwistRide is a navigation app for motorcycle riders. This policy explains what i
 - No account is required.
 - Your routes, GPX files, ride history, and settings are stored on your device.
 - We do not upload your ride history.
-- Routing requests send anonymous origin/destination coordinates to a routing service so a route can be calculated.
+- Address and place searches are sent to Apple MapKit.
+- Routing requests send anonymous origin/destination coordinates to OpenRouteService so a route can be calculated.
+- Recent searches are stored only on your device.
 - We do not sell personal information, show ads, or use tracking across apps or websites.
 
 ## Information processed by the app
@@ -22,6 +24,10 @@ TwistRide uses your device's location to show your position, calculate routes, p
 When you request a route, the app sends the origin and destination coordinates, and any waypoints, to a routing service. The request does not include your name, account, advertising identifier, or other persistent identifier.
 
 Location history and ride tracks are stored locally on your device unless you explicitly export or share them.
+
+### Search
+
+When you search for an address or place, the search text and the visible map area are sent to Apple MapKit to return results. Apple's privacy policy applies to that processing. Recent searches are stored locally on your device and are not uploaded.
 
 ### Map tiles
 
@@ -41,13 +47,13 @@ The current version does not include third-party advertising or cross-app tracki
 
 ## Service providers
 
-Routing may be provided by Stadia Maps or a self-hosted Valhalla instance. Map tiles may be provided by OpenFreeMap or a self-hosted tile service. These providers process the technical request needed to return a route or tile.
+Routing is provided by OpenRouteService, operated by HeiGIT. Route results are used under CC BY-SA 4.0 and are attributed in the app. Map tiles are provided by OpenFreeMap. These providers process the technical request needed to return a route or tile.
 
 Map data is © OpenStreetMap contributors and is available under the Open Database License (ODbL) 1.0.
 
 ## Data retention
 
-Routing requests are designed not to include persistent identifiers. Server-side request logs are intended to be deleted within 24 hours. Locally stored rides and GPX files remain on your device until you delete them or uninstall the app.
+Routing requests are designed not to include persistent identifiers. OpenRouteService's retention is governed by HeiGIT's policies. Locally stored rides and GPX files remain on your device until you delete them or uninstall the app.
 
 ## Your choices
 
